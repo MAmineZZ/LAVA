@@ -1,0 +1,5 @@
+// deliberately bad — Sentinel should flag these
+const apiKey = "sk-live-1234567890abcdef";              // hardcoded secret
+function getUser(id) {
+  db.query("SELECT * FROM users WHERE id = " + id);     // SQL injection
+}
